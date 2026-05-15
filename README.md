@@ -37,7 +37,7 @@ com.muthuvarshith.nammaraste/
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/muthuvarshith/nammaraste.git
+   git clone https://github.com/muthuvarshith/Namma-Raste.git
    ```
 2. **Open in Android Studio:**
    Open the folder as an existing Android Studio project.
