@@ -1,55 +1,144 @@
-# Namma Raste (Our Road) Reporter 🛣️
+# 🚧 Namma-Raste Reporter - Civic Issue Reporting App
 
-**Namma Raste** is a modern Android application built to empower citizens to report and track civic infrastructure issues like potholes, broken streetlights, and drainage problems. Built with Jetpack Compose and a local-first architecture.
+[![Kotlin Version](https://img.shields.io/badge/Kotlin-2.0.0-blue.svg)](https://kotlinlang.org)
+[![Compose Version](https://img.shields.io/badge/Jetpack%20Compose-1.10.0-brightgreen)](https://developer.android.com/jetpack/compose)
 
-## 🚀 Features
-
-- **Issue Reporting:** Capture photos of issues directly within the app using CameraX.
-- **Smart Location:** Automatically attaches GPS coordinates to every report for precise mapping.
-- **Local Storage:** Uses Room Database for high-performance, offline-capable data persistence.
-- **Search & Track:** Easily find reports using a unique Ticket ID system.
-- **User Authentication:** Secure login and registration system to maintain report integrity.
-- **Modern UI:** Clean, responsive interface built entirely with Jetpack Compose and Material 3.
-
-## 🛠️ Tech Stack
-
-- **Language:** [Kotlin](https://kotlinlang.org/) (2.0.0)
-- **UI Framework:** [Jetpack Compose](https://developer.android.com/jetpack/compose) with Material 3
-- **Database:** [Room SQLite](https://developer.android.com/training/data-storage/room)
-- **Media:** [CameraX](https://developer.android.com/training/camerax) for image capture
-- **Image Loading:** [Coil](https://coil-kt.github.io/coil/)
-- **Location:** [Google Play Services Location](https://developers.google.com/android/guides/setup)
-- **Architecture:** MVVM (Model-View-ViewModel)
-- **Dependency Management:** Version Catalogs (`libs.versions.toml`)
-
-## 📂 Project Structure
-
-```text
-com.muthuvarshith.nammaraste/
-├── data/          # Room Database, DAOs (UserDao, ReportDao)
-├── model/         # Data Entities (User, Report)
-├── repository/    # Data logic and abstraction
-├── ui/            # Compose Screens, Navigation, and Theme
-└── viewmodel/     # UI State and Business Logic
-```
-
-## 🏗️ Getting Started
-
-1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/muthuvarshith/Namma-Raste.git
-   ```
-2. **Open in Android Studio:**
-   Open the folder as an existing Android Studio project.
-3. **Build & Run:**
-   Ensure you have an Android device or emulator running (API 24+). Hit **Run**.
-
-## 🔒 Privacy & Permissions
-
-The app requires the following permissions to function correctly:
-- `CAMERA`: To capture images of civic issues.
-- `ACCESS_FINE_LOCATION`: To tag reports with precise GPS coordinates.
-- `READ_EXTERNAL_STORAGE`: To handle image URI processing.
+Namma-Raste Reporter is a complete Android infrastructure issue reporting application built using Kotlin and Jetpack Compose. It allows citizens to report civic issues like potholes, broken streetlights, and road damage directly to the authorities with photo evidence and GPS location.
 
 ---
-Developed by **Muthu Varshith**
+
+# ✨ Features
+
+- **Issue Reporting** – Capture images using CameraX, select issue type and severity.
+- **Automatic Data Collection** – Automatically fetches GPS location and generates timestamps.
+- **Unique Ticket IDs** – Generates unique Ticket IDs (e.g., `NRR-1001`) for every report.
+- **Status Tracking** – Search and track the status of reported issues using Ticket IDs.
+- **Authentication** – Simple login/register system to prevent anonymous reports.
+- **Local Persistence** – Saves all reports and user data locally using Room Database.
+- **Modern UI** – Clean Material3 UI with a green civic/government theme.
+
+---
+
+# 🏗️ Architecture
+
+The project follows **MVVM (Model-View-ViewModel)** architecture with the following package structure:
+
+- `ui` → Composable screens and theme
+- `data` → Room Database, DAOs
+- `model` → Data entities (`User`, `Report`)
+- `repository` → Data handling logic
+- `viewmodel` → UI state management
+
+---
+
+# 🛠️ Technologies Used
+
+- **Jetpack Compose** – UI toolkit
+- **Kotlin Coroutines** – Asynchronous operations
+- **Room Database** – Local storage
+- **CameraX** – Image capture
+- **FusedLocationProviderClient** – GPS location
+- **Navigation Compose** – App navigation
+- **Material Design 3** – UI components
+
+---
+
+# 📱 Application Screenshots
+
+## 🔐 Authentication
+
+| Register Screen | Permission Access |
+|---|---|
+| ![](Snapshots/1.jpeg) | ![](Snapshots/2.jpeg) |
+
+---
+
+## 🏠 Home Screen
+
+| Dashboard |
+|---|
+| ![](Snapshots/4.jpeg) |
+
+---
+
+## 📝 Report Issue
+
+| Report Issue Form | Report Submitted |
+|---|---|
+| ![](Snapshots/3.jpeg) | ![](Snapshots/8.jpeg) |
+
+---
+
+## 📊 Track Reports
+
+| Track Reports | Search by Ticket ID |
+|---|---|
+| ![](Snapshots/6.jpeg) | ![](Snapshots/5.jpeg) |
+
+---
+
+## 📂 Recent Reports
+
+| Recent Reports |
+|---|
+| ![](Snapshots/7.jpeg) |
+
+---
+
+# 🎥 Demo Video
+
+👉 [Click Here to Watch Demo Video](Snapshots/Namma%20Raste%20Demo.mp4)
+
+---
+
+# 🚀 Installation & Setup
+
+## Prerequisites
+
+- Android Studio Ladybug or newer
+- Android SDK 33+
+- Kotlin 2.0.0
+
+## Steps
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/MuthuVarshith/Namma-Raste.git
+```
+
+### 2️⃣ Open in Android Studio
+
+- Select **Open**
+- Choose the project directory
+
+### 3️⃣ Build and Run
+
+- Connect a physical device or emulator
+- Click the **Run ▶️** button
+
+---
+
+# 📌 Future Enhancements
+
+- Firebase backend integration
+- Real-time complaint updates
+- Admin dashboard for authorities
+- Push notifications
+- Google Maps integration
+- Cloud image storage
+
+---
+
+# 👨‍💻 Developer
+
+**Muthu Varshith**
+
+📧 Email: muthuvarshith290@gmail.com  
+🔗 GitHub: https://github.com/MuthuVarshith
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
